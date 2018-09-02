@@ -1,21 +1,34 @@
 <html>
+<script type="text/javascript" src="js/validate.js">
+</script>
 <head>
-	<link href="css/home.css" rel="stylesheet">
-	<link href="css/font-awesome.min.css" rel="stylesheet">
-	<title >iris</title>
-	<link rel="shortcut icon" type="image/png" href="img/iris.png"/>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="iris,search engine,lerbernon" />
-	<meta name="descriprion" content="the most powerful search engine ever created in zim"/></br>
+	<title>iris</title>
+	<link href="css/font/font-awesome.min.css" rel="stylesheet"/>
+	<link href="css/css.css" rel="stylesheet"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+	<meta name="description" content ="iris search engine" charset="UTF-8"></meta>
 </head>
 <body>
-		<div class="search-wrapper">
-			<form action="result.php" method="post">
-				<input type="input"  name="search_request" class="search-text" placeholder="search everything"></input>
-				<button type="submit" name="search_button" class="search-button"><i class=" fa fa-search"></i></button>
-			</form>
+	<section class="search">
+		<form action="process"  method="post" onsubmit="return validate()">
+			<input type="text" name="text" id="text" placeholder="search iris" name="text"></input>
+			<button type="submit" name="search" id="search" ><i class="fa fa-search" ></i></button>
+			<p id="ms4"></p>
+			<p id="error"></p><br>
+		</form>	
+		<div class="popular">
+				<!----<span><i class="fa fa-list"></i></span>!--->
 		</div>
-
+	</section>
+	<section class="footer">
+		<footer>
+			<a href="#">terms</a>
+			<a href="#">advertisement</a>
+			<a href="#">suggestions</a>
+			<a href="#">privacy</a>
+			<a href="#">help</a>
+			<a href="#">about</a></br>
+		</footer>
+	</section>
 </body>
 </html>
